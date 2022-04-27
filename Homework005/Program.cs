@@ -5,8 +5,12 @@ Console.Write("Введите 3-х значное число: ");
 int a =  int.Parse(Console.ReadLine());
 if (a > 99 && a < 1000)
 {
-int num1 = a % 100;
-int num2 = num1 / 10;
+int num1 = a % 100 /10;
+Console.WriteLine("Вторая цифра: " + num1);
+}
+if (a < -99 && a > -1000)
+{
+int num2 = (-a) % 100 /10;
 Console.WriteLine("Вторая цифра: " + num2);
 }
 else
